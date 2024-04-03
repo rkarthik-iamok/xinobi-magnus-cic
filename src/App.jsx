@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Footer from "./components/layouts/Footer";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/about" exact element={<About />} />
+        <Route path="/profile" element={<UserProfile />} />
       </Routes>
       <Footer />
     </div>
