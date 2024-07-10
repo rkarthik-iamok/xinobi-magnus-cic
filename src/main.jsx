@@ -14,6 +14,7 @@ root.render(
     clientId={config.oidc.clientId}
     authorizationParams={{
       redirect_uri: window.location.origin,
+      audience: config.oidc.audience,
     }}
   >
     <Router>
